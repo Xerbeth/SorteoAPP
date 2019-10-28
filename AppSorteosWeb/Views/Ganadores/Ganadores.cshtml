@@ -1,0 +1,53 @@
+﻿@model List<ServicioWeb.Models.GanadoresModel>
+@{
+    ViewBag.Title = "Ganadores";
+}
+<script src="~/Scripts/Ganadores/Ganadores.js"></script>
+
+
+<h2>Ganadores</h2>
+
+<div>
+    <!-- Button to Open the Modal -->
+    <button type="button" onclick="Ganadores.generateLottery()" class="btn btn-primary" style="float: right;">Asignar premios</button>
+</div>
+<br /><br />
+<hr />
+
+@*Grid de personas*@
+<table class="table table-striped w-auto">
+
+    <!--Table head-->
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Tipo documento</th>
+            <th>Numero documento</th>
+            <th>Nombre completo</th>
+            <th>Articulo</th>
+            <th>Cantidad</th>           
+        </tr>
+    </thead>
+    <!--Table head-->
+    <!--Table body-->
+    <tbody>
+        @foreach (var ganador in Model)
+        {
+        <tr class="table-info">
+            <th scope="row">@ganador.Item</th>
+            <th scope="row">@ganador.TipoDocumento</th>
+            <td scope="row">@ganador.NumeroDocumento</td>
+            <td scope="row">@ganador.Nombre</td>
+            <td scope="row">@ganador.Articulo</td>
+            <td scope="row">@ganador.Cantidad</td>            
+        </tr>
+        }
+
+    </tbody>
+    <!--Table body-->
+
+</table>
+
+<script type="text/javascript">
+    Ganadores.start();
+</script>

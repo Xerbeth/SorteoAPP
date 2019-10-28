@@ -1,0 +1,6 @@
+C:\Users\faiber.torres\source\repos\Sorteos\ServicioWeb.Models\bin\Debug\ServicioWeb.Models.dll
+C:\Users\faiber.torres\source\repos\Sorteos\ServicioWeb.Models\bin\Debug\ServicioWeb.Models.pdb
+C:\Users\faiber.torres\source\repos\Sorteos\ServicioWeb.Models\obj\Debug\ServicioWeb.Models.csproj.CoreCompileInputs.cache
+C:\Users\faiber.torres\source\repos\Sorteos\ServicioWeb.Models\obj\Debug\ServicioWeb.Models.dll
+C:\Users\faiber.torres\source\repos\Sorteos\ServicioWeb.Models\obj\Debug\ServicioWeb.Models.pdb
+C:\Users\faiber.torres\source\repos\Sorteos\ServicioWeb.Models\obj\Debug\ServicioWeb.Models.csprojAssemblyReference.cache

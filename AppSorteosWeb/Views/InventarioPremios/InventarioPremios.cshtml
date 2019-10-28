@@ -1,0 +1,42 @@
+﻿@model List<ServicioWeb.Models.InventarioPremiosModel> 
+@{
+    ViewBag.Title = "Inventario de Premios";
+}
+
+<link href="~/Content/InventarioPremios/InventarioPremios.css" rel="stylesheet" />
+<script src="~/Scripts/InventarioPremios/InventarioPremios.js"></script>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+
+<h2>Inventario de Premios</h2>
+
+<!--Table-->
+<table class="table table-striped w-auto">
+
+    <!--Table head-->
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Descripción</th>
+            <th>Cantidad</th>
+            <th>Fecha de registro</th>
+        </tr>
+    </thead>
+    <!--Table head-->
+    <!--Table body-->
+    <tbody>
+        @foreach (var premio in Model)
+        {
+            <tr class="table-info">
+                <th scope="row">@premio.IdInventarioPremio</th>
+                <td>@premio.Descripcion</td>
+                <td>@premio.Cantidad</td>
+                <td>@premio.Fecharegistro</td>
+            </tr>
+        }
+
+    </tbody>
+    <!--Table body-->
+
+</table>
+<!--Table-->
